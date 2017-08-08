@@ -25,7 +25,7 @@ class KFramework
     def initialize(servlet_request, body, is_ssl)
       @servlet_request = servlet_request
       @body = body
-      @is_ssl = is_ssl
+      @is_ssl = (self.headers['X-Forwarded-Proto'] == 'https')
     end
     attr_reader :body
     def path

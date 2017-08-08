@@ -214,7 +214,7 @@ fi
 #
 if [ ! -f haplo/fetch-and-compile.sh ]; then
     echo " *** Haplo cloning from github ***"
-    git clone https://github.com/haplo-org/haplo.git
+    git clone https://github.com/JiscRDSS/haplo.git
     echo " *** Haplo github clone done ***"
 fi
 #
